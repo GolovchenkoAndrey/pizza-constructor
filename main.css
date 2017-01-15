@@ -34,8 +34,12 @@ body {
 	background-size: cover;
 }
 
-.pizza-characters {
-	display: inline-block;
+.pizza-type-container {
+	width: 415px;
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 
@@ -57,9 +61,27 @@ h1 {
 	background-size: cover;
 }
 
-.lable-large {
-	background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-large.png');
-	background-position: 50% -65px;
-    background-position-x: 50%;
-    background-position-y: -65px;
+.pizza-size {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.label-large {
+	background: url('img/pizza-size-large.png') no-repeat;
+	background-position: 50% 0;
+	width: 60px;
+	height: 65px;
+}
+
+.label-mid {
+	background: url('https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-mid.png') no-repeat 50% 0;
+	width: 52px;
+	height: 56px;
+}
+
+.label-small {
+	background: url('https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-small.png') no-repeat 50% 0;
+	width: 44px;
+	height: 47px;
 }

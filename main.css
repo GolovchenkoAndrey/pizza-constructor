@@ -1,65 +1,199 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	width: 100%;
-	background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/repeat_bg.jpg');
+    width: 100%;
+    background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/repeat_bg.jpg');
 }
 
 .content {
-	margin: 0 auto;
-	padding: 100px 0;
-	width: 1198px;
-	height: 100%
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 1198px;
+    height: 100%
 }
 
 .desk {
-	width: 880px;
-	height: 1017px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: -5px 5px 20px 0px #000;
-	display: flex;
-	justify-content: space-between;
+    width: 880px;
+    height: 1017px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -5px 5px 20px 0px #000;
+    display: flex;
+    justify-content: space-between;
 }
 
-
 .pizza img {
-	margin: 10px;
-	width: 440px;
-	height: 440;px;
-	background-size: cover;
+    margin: 10px;
+    width: 440px;
+    height: 440px;
+    background-size: cover;
 }
 
 .pizza-characters {
-	display: inline-block;
+    display: inline-block;
+    width: 488px;
 }
 
-
 h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-	padding-right: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-right: 50px;
 }
 
 .dough-type img {
-	width: 70px;
-	height: 52px;
-	background-size: cover;
+    width: 70px;
+    height: 52px;
+    background-size: cover;
 }
 
 .pizza-sauce img {
-	width: 60px;
-	height: 60px;
-	background-size: cover;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
 }
 
-.lable-large {
-	background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-large.png');
-	background-position: 50% -65px;
-    background-position-x: 50%;
-    background-position-y: -65px;
+.item-grlabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.label-large {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-large.png) no-repeat 50% 0;
+    width: 60px;
+    height: 65px;
+}
+
+.label-mid {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-mid.png) no-repeat 50% 0;
+    width: 52px;
+    height: 56px;
+}
+
+.label-small {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-small.png) no-repeat 50% 0;
+    width: 44px;
+    height: 47px;
+}
+
+.hide {
+    display: none;
+}
+
+.item-radio-large:checked ~ .label-large {
+    background-position: 50% -65px;
+}
+
+.item-radio-mid:checked ~ .label-mid {
+    background-position: 50% -56px;
+}
+
+.item-radio-small:checked ~ .label-small {
+    background-position: 50% -47px;
+}
+
+.label-hotdog {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/hotdog.png) no-repeat 0 0;
+    width: 70px;
+    height: 52px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.label-italano {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/item-italano.png) no-repeat 0 0;
+    width: 70px;
+    height: 52px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.label-americano {
+    background: url(https://pizza.od.ua/local/templates/pizzaodua/img/item-americano.png) no-repeat 0 0;
+    width: 70px;
+    height: 52px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.item-radio-hotdog:checked ~ .label-hotdog {
+    opacity: 1;
+}
+
+.item-radio-italano:checked ~ .label-italano {
+    opacity: 1;
+}
+
+.item-radio-americano:checked ~ .label-americano {
+    opacity: 1;
+}
+
+.item-params-side {
+    font-size: 16px;
+    line-height: normal;
+    color: #5e5e5e;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.box-side {
+    float: left;
+}
+
+.item-params-value {
+    font-weight: bold;
+}
+
+.label-souch-type1 {
+    background: url(https://pizza.od.ua/images/garlik.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.label-souch-type2 {
+    background: url(https://pizza.od.ua/images/ranch.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.label-souch-type3 {
+    background: url(https://pizza.od.ua/images/salsa.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.label-souch-type4 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    opacity: .5;
+    background: url(https://pizza.od.ua/images/bbq.png) no-repeat 50% 0;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.item-radio-souch-type1:checked ~ .label-souch-type1,
+.item-radio-souch-type2:checked ~ .label-souch-type2,
+.item-radio-souch-type3:checked ~ .label-souch-type3,
+.item-radio-souch-type4:checked ~ .label-souch-type4 {
+    opacity: 1;
 }

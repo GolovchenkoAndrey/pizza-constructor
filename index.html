@@ -1,43 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Pizza constructor</title>
-	<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Pizza constructor</title>
+    <link rel="stylesheet" href="main.css">
 
 </head>
 <body>
-	
-	<div class="content">
-		<div class="desk">
-			<div class="pizza">
-				<img src="https://pizza.od.ua/local/templates/pizzaodua/img/Custom_Pizza_3.jpg" alt="">
-			</div>
-			<div class="pizza-characters">
-				<h1>Сделай пиццу сам!</h1>
-				<div class="dough-type">
-					<img src="img/americana.png" alt="">
-					<img src="img/italiano.png" alt="">
-					<img src="img/hot-dog.png" alt="">
-				</div>
-				<div class="pizza-size">
-					<label for="sXXL" class="item-grlabel label-large"></label>
-					<img src="https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-mid.png" alt="">
-					<img src="https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-small.png" alt="">
-				</div>
-				<div class="pizza-sauce">
-					<img src="https://pizza.od.ua/images/garlik.png" alt="">
-					<img src="https://pizza.od.ua/images/ranch.png" alt="">
-					<img src="https://pizza.od.ua/images/salsa.png" alt="">
-					<img src="https://pizza.od.ua/images/bbq.png" alt="">
-				</div>
-			</div>
-				
-		</div>
-	</div>
-	
 
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="main.js"></script>
+<div class="content">
+    <div class="desk">
+        <div class="pizza">
+            <img src="https://pizza.od.ua/local/templates/pizzaodua/img/Custom_Pizza_3.jpg" alt="">
+        </div>
+        <div class="pizza-characters">
+            <h1>Сделай пиццу сам!</h1>
+            <div class="box item-params-line clearfix">
+                <div class="box-side item-params-side">
+                    <div class="item-params-label">Тесто</div>
+                    <div class="item-params-value js-label-dough">Американо</div>
+                </div>
+
+
+                <div class="box-base clearfix">
+                    <div class="item-btns-wrap item-btns-dough">
+                        <input data-add="0" data-x="30" data-w-x="340" data-xl="40" data-w-xl="470" data-xxl="60"
+                               data-w-xxl="630" type="radio" name="dough"
+                               onclick="$('.js-label-dough').text($(this).val());" id="t1"
+                               class="item-radio-americano hide js-dough" checked="checked" value="Американо">
+                        <input data-add="0" data-x="30" data-w-x="380" data-xl="40" data-w-xl="560" data-xxl="60"
+                               data-w-xxl="780" type="radio" name="dough"
+                               onclick="$('.js-label-dough').text($(this).val());" id="t2"
+                               class="item-radio-italano hide js-dough" value="Итальяно">
+                        <input data-value="3" data-add="42" type="radio" name="dough"
+                               onclick="$('.js-label-dough').text($(this).val());" id="t3"
+                               class="item-radio-hotdog hide js-dough js-hotdog-toggle" value="Хот-дог">
+                        <label for="t1" class="item-oplabel label-americano"></label>
+                        <label for="t2" class="item-oplabel label-italano"></label>
+                        <label for="t3" class="item-oplabel label-hotdog js-hotdog-toggle"></label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="box-side item-params-side">
+                <div class="item-params-label">Размер</div>
+                <div class="item-params-value js-label-cake">35 см</div>
+            </div>
+            <div class="item-btns-wrap item-btns-cake" style="height:79px">
+
+                <input id="sXXL" data-size1="35 см" type="radio" name="size"
+                       onclick="$('.js-label-cake').text($(this).data('size1'));"
+                       class="item-radio-large hide js-cake dough"
+                       value="xxl" checked="checked">
+
+                <input id="sXL" data-size1="30 см" type="radio" name="size"
+                       onclick="$('.js-label-cake').text($(this).data('size1'));"
+                       class="item-radio-mid hide js-cake dough"
+                       value="xl">
+
+                <input id="sX" data-size1="25 см" type="radio" name="size"
+                       onclick="$('.js-label-cake').text($(this).data('size1'));"
+                       class="item-radio-small hide js-cake dough"
+                       value="x">
+                <label for="sXXL" class="item-grlabel label-large"></label>
+                <label for="sXL" class="item-grlabel label-mid"></label>
+                <label for="sX" class="item-grlabel label-small"></label>
+
+            </div>
+
+            <div class="box item-params-line clearfix">
+                <div class="box-side item-params-side">
+                    <div class="item-params-label">Соус</div>
+                    <div class="item-params-value js-label-souch">Гарлик</div>
+                </div>
+                <div class="box-base clearfix">
+                    <div class="item-btns-wrap">
+                        <input onclick="$('.js-label-souch').text($(this).data('value'));" data-value="Гарлик "
+                               id="souch1" data-price="" type="radio" name="sauce"
+                               class="item-radio-souch-type1 hide js-souch sauce" value="6157" checked="checked">
+                        <input onclick="$('.js-label-souch').text($(this).data('value'));" data-value="Ранч "
+                               id="souch2" data-price="" type="radio" name="sauce"
+                               class="item-radio-souch-type2 hide js-souch sauce" value="6027">
+                        <input onclick="$('.js-label-souch').text($(this).data('value'));" data-value="Сальса"
+                               id="souch3"
+                               data-price="" type="radio" name="sauce"
+                               class="item-radio-souch-type3 hide js-souch sauce" value="6158">
+                        <input onclick="$('.js-label-souch').text($(this).data('value'));" data-value="Bbq "
+                               id="souch4" data-price="" type="radio" name="sauce"
+                               class="item-radio-souch-type4 hide js-souch sauce" value="6035">
+                        <label for="souch1" class="sauce item-oplabel label-souch-type1"></label>
+                        <label for="souch2" class="sauce item-oplabel label-souch-type2"></label>
+                        <label for="souch3" class="sauce item-oplabel label-souch-type3"></label>
+                        <label for="souch4" class="sauce item-oplabel label-souch-type4"></label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

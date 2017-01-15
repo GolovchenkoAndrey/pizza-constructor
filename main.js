@@ -1,7 +1,7 @@
 //что то должно быть
 $(document).ready(function () {
 
-    //оставляем только средний размер у ходдогов
+    //оставляем только средний размер у ход-догов
     $('.item-oplabel').on('click', function () {
         switch ($(this).attr('for')) {
             case 't1':

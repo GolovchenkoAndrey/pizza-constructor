@@ -1,0 +1,65 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/repeat_bg.jpg');
+}
+
+.content {
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 1198px;
+	height: 100%
+}
+
+.desk {
+	width: 880px;
+	height: 1017px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: -5px 5px 20px 0px #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.pizza img {
+	margin: 10px;
+	width: 440px;
+	height: 440;px;
+	background-size: cover;
+}
+
+.pizza-characters {
+	display: inline-block;
+}
+
+
+h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-right: 50px;
+}
+
+.dough-type img {
+	width: 70px;
+	height: 52px;
+	background-size: cover;
+}
+
+.pizza-sauce img {
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+}
+
+.lable-large {
+	background-image: url('https://pizza.od.ua/local/templates/pizzaodua/img/pizza-size-large.png');
+	background-position: 50% -65px;
+    background-position-x: 50%;
+    background-position-y: -65px;
+}

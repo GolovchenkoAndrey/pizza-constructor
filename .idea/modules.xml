@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/pizza.iml" filepath="$PROJECT_DIR$/.idea/pizza.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/pizza-constructor.iml" filepath="$PROJECT_DIR$/.idea/pizza-constructor.iml" />
+>>>>>>> e1fb4a16bbc5677d6b4f8e9f2731332f1fa1dc6a
     </modules>
   </component>
 </project>

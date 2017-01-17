@@ -101,6 +101,7 @@ h1 {
     display: inline-block;
     cursor: pointer;
     background-size: cover;
+    opacity: .5;
 }
 
 .label-italano {
@@ -110,6 +111,7 @@ h1 {
     display: inline-block;
     cursor: pointer;
     background-size: cover;
+    opacity: .5;
 }
 
 .label-americano {
@@ -119,6 +121,7 @@ h1 {
     display: inline-block;
     cursor: pointer;
     background-size: cover;
+    opacity: .5;
 }
 
 .item-params-side {

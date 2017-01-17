@@ -1,7 +1,7 @@
 //что то должно быть
 $(document).ready(function () {
 
-    //окраска размера - стиль для кжадого размера
+    //стиль для кжадого размера
     function cssSize(type) {
 
         var cssSize;
@@ -25,13 +25,21 @@ $(document).ready(function () {
     $('.type-dough').on('click', function () {
 
         doughPizzaCss = $(this).attr('id');
+
+        //отображаем названия выбранного елемента
         $('.js-label-dough').text($(this).attr('data-value'));
 
         //1 - americano / 2 - italiano
         if (doughPizzaCss == 't1' || doughPizzaCss == 't2') {
+
+            //отображаем названия выбранного елемента
             $('.js-label-cake').text($('#' + sizePizza).attr('data-value'));
+
+            //окрашиваем вбыранный елемент
             $('.type-dough').css({'opacity': '.5'});
             $(this).css({'opacity': '1'});
+
+            //возвращаем размеры и окраску
             $('.size').css({
                 'display': 'inline-block',
                 'background-position': ''
@@ -40,9 +48,15 @@ $(document).ready(function () {
 
             //3 - hot-dog
         } else {
+
+            //отображаем названия выбранного елемента
             $('.js-label-cake').text($('#sXL').attr('data-value'));
+
+            //окрашиваем вбыранный елемент
             $('.type-dough').css({'opacity': '.5'});
             $(this).css({'opacity': '1'});
+
+            //оставляем только средний размер + красим его
             $('.size').css({'display': 'none'});
             $('.label-mid').css({
                 'display': 'inline-block',
@@ -55,8 +69,11 @@ $(document).ready(function () {
     $('.size').on('click', function () {
 
         sizePizza = $(this).attr('id');
+
+        //отображаем названия выбранного елемента
         $('.js-label-cake').text($(this).attr('data-value'));
 
+        //окрашиваем
         $('.size').css({'background-position': ''});
 
         switch ($(this).attr('id')) {
@@ -76,8 +93,11 @@ $(document).ready(function () {
     $('.sauce').on('click', function () {
 
         souchPizza = $(this).attr('id');
+
+        //отображаем названия выбранного елемента
         $('.js-label-souch').text($(this).attr('data-value'));
 
+        //окрашиваем вбыранный елемент
         $('.sauce').css({'opacity': '.5'});
         $(this).css({'opacity': '1'});
 

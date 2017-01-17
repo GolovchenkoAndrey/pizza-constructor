@@ -1,31 +1,86 @@
 //что то должно быть
 $(document).ready(function () {
 
+    //окраска размера - стиль для кжадого размера
+    function cssSize(type) {
+
+        var cssSize;
+
+        if (type == 'sX') {
+            cssSize = {'background-position': '50% -47px'};
+        } else if (type == 'sXL') {
+            cssSize = {'background-position': '50% -56px'};
+        } else if (type == 'sXXL') {
+            cssSize = {'background-position': '50% -66px'};
+        }
+        return cssSize
+    }
+
+    //запоминаем выбор для отоюражения (по умолчанию первый)
+    var doughPizzaCss = 't1',
+        sizePizza = 'sXXL',
+        souchPizza = 'souch1';
+
     //оставляем только средний размер у ход-догов + выделяем нажатие
-    $('.item-oplabel').on('click', function () {
-        switch ($(this).attr('for')) {
-            //1 - americano / 2 - italiano
-            case 't1':
-            case 't2':
-                $('.item-oplabel').css({'opacity': '.5'});
-                $(this).css({'opacity': '1'});
-                $('.item-grlabel').css({
-                    'display': 'inline-block'
-                });
-                break;
+    $('.type-dough').on('click', function () {
+
+        doughPizzaCss = $(this).attr('id');
+        $('.js-label-dough').text($(this).attr('data-value'));
+
+        //1 - americano / 2 - italiano
+        if (doughPizzaCss == 't1' || doughPizzaCss == 't2') {
+            $('.js-label-cake').text($('#' + sizePizza).attr('data-value'));
+            $('.type-dough').css({'opacity': '.5'});
+            $(this).css({'opacity': '1'});
+            $('.size').css({
+                'display': 'inline-block',
+                'background-position': ''
+            });
+            $('#' + sizePizza).css(cssSize(sizePizza));
+
             //3 - hot-dog
-            case 't3':
-                $('.item-grlabel').css({'display': 'none'});
-                $(this).css({'opacity': '1'});
-                $('.label-mid').css({
-                    'display': 'inline-block',
-                    'background-position': '50% -56px'
-                });
+        } else {
+            $('.js-label-cake').text($('#sXL').attr('data-value'));
+            $('.type-dough').css({'opacity': '.5'});
+            $(this).css({'opacity': '1'});
+            $('.size').css({'display': 'none'});
+            $('.label-mid').css({
+                'display': 'inline-block',
+                'background-position': '50% -56px'
+            });
+        }
+    });
+
+    //ставим окраску выбора размера пиццы
+    $('.size').on('click', function () {
+
+        sizePizza = $(this).attr('id');
+        $('.js-label-cake').text($(this).attr('data-value'));
+
+        $('.size').css({'background-position': ''});
+
+        switch ($(this).attr('id')) {
+            case 'sX':
+                $(this).css(cssSize(sizePizza));
+                break;
+            case 'sXL':
+                $(this).css(cssSize(sizePizza));
+                break;
+            case 'sXXL':
+                $(this).css(cssSize(sizePizza));
                 break;
         }
     });
 
-    //ставим окраску у выбра размера
+    //ставим окраску выбора соуса
+    $('.sauce').on('click', function () {
 
+        souchPizza = $(this).attr('id');
+        $('.js-label-souch').text($(this).attr('data-value'));
+
+        $('.sauce').css({'opacity': '.5'});
+        $(this).css({'opacity': '1'});
+
+    });
 
 });

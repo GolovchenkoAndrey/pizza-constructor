@@ -279,12 +279,20 @@ h2 {
     margin-right: 30px;
  }
 
-.seafood {
+.seafood,
+.meat,
+.vegetables,
+.cheese,
+.sauce-ingridient {
     display: flex;
     flex-direction: row;
 }
 
- .seafood img {
+ .seafood img,
+ .meat img,
+ .vegetables img,
+ .cheese img,
+ .sauce-ingridient img {
     max-width: 78px;
     max-height: 52px;
     margin: 0 auto;
@@ -313,3 +321,41 @@ h2 {
     text-align: center;
     margin-right: 35px;
 } 
+
+.meat,
+.vegetables,
+.cheese,
+.sauce-ingridient {
+    display: none;
+}
+
+.ta_r {
+    width: 480px;
+    text-align: right;
+}
+
+.item-order span {
+    font-size: 26px;
+
+}
+
+.composition-dec {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #f32000;
+    cursor: pointer;
+    display: none;
+}
+
+.composition-dec:before {
+    content: '';
+    background: #f32000;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+}

@@ -9,29 +9,27 @@
 <body>
 
 <div class="content">
-
     <div class="container">
             <div class="desk">
-            <div class="pizza">
-                <img src="https://pizza.od.ua/local/templates/pizzaodua/img/Custom_Pizza_3.jpg" alt="">
-            </div>
-            <div class="pizza-characters">
-                <h1>Сделай пиццу сам!</h1>
-                <div class="box item-params-line clearfix">
-                    <div class="box-side item-params-side">
-                        <div class="item-params-label">Тесто</div>
-                        <div class="item-params-value js-label-dough">Американо</div>
+                <div class="pizza">
+                    <img src="https://pizza.od.ua/local/templates/pizzaodua/img/Custom_Pizza_3.jpg" alt="">
+                </div>
+                <div class="pizza-characters">
+                    <h1>Сделай пиццу сам!</h1>
+                    <div class="box item-params-line clearfix">
+                        <div class="box-side item-params-side">
+                            <div class="item-params-label">Тесто</div>
+                            <div class="item-params-value js-label-dough">Американо</div>
                     </div>
-
-
                     <div class="box-base clearfix">
                         <div class="item-btns-wrap item-btns-dough">
-                            <label for="t1" class="item-oplabel label-americano" style="opacity: 1;"></label>
-                            <label for="t2" class="item-oplabel label-italano"></label>
-                            <label for="t3" class="item-oplabel label-hotdog js-hotdog-toggle"></label>
+                            <label data-value="Американо" id="t1" class="type-dough item-oplabel label-americano"
+                                   style="opacity: 1;"></label>
+                            <label data-value="Итальяно" id="t2" class="type-dough item-oplabel label-italano"></label>
+                            <label data-value="Хот-Дог" id="t3"
+                                   class="type-dough item-oplabel label-hotdog js-hotdog-toggle"></label>
                         </div>
                     </div>
-
 
                 </div>
                 <div class="box-side item-params-side">
@@ -39,28 +37,30 @@
                     <div class="item-params-value js-label-cake">35 см</div>
                 </div>
                 <div class="item-btns-wrap item-btns-cake" style="height:79px">
-                    <label for="sXXL" class="item-grlabel label-large" style="background-position: 50% -66px"></label>
-                    <label for="sXL" class="item-grlabel label-mid"></label>
-                    <label for="sX" class="item-grlabel label-small"></label>
-
+                    <label data-value="35 см" id="sXXL" class="size item-grlabel label-large"
+                           style="background-position: 50% -66px"></label>
+                    <label data-value="30 см" id="sXL" class="size item-grlabel label-mid "></label>
+                    <label data-value="25 см" id="sX" class="size item-grlabel label-small"></label>
                 </div>
 
-                <div class="box item-params-line clearfix">
-                    <div class="box-side item-params-side">
-                        <div class="item-params-label">Соус</div>
-                        <div class="item-params-value js-label-souch">Гарлик</div>
-                    </div>
+
+                    <div class="box item-params-line clearfix">
+                        <div class="box-side item-params-side">
+                            <div class="item-params-label">Соус</div>
+                            <div class="item-params-value js-label-souch">Гарлик</div>
+                        </div>
                     <div class="box-base clearfix">
                         <div class="item-btns-wrap">
-                            <label for="souch1" class="sauce item-oplabel label-souch-type1"></label>
-                            <label for="souch2" class="sauce item-oplabel label-souch-type2"></label>
-                            <label for="souch3" class="sauce item-oplabel label-souch-type3"></label>
-                            <label for="souch4" class="sauce item-oplabel label-souch-type4"></label>
+                            <label data-value="Гарлик" id="souch1" class="sauce item-oplabel label-souch-type1"
+                                   style="opacity: 1;"></label>
+                            <label data-value="Ранч" id="souch2" class="sauce item-oplabel label-souch-type2"></label>
+                            <label data-value="Сальса" id="souch3" class="sauce item-oplabel label-souch-type3"></label>
+                            <label data-value="Bbq" id="souch4" class="sauce item-oplabel label-souch-type4"></label>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                    </div>
+                </div>
 
 
         </div>
@@ -77,15 +77,64 @@
                 <div class="border"></div>
                 <div class="additional-ingridient">
                     <h2>Дополнительные начинки:</h2>
-                    <div class="filling-list">
-                        
+                
+                        <div class="filling-list item-btns-wrap js-tab-nav item-btns-cake">
+                                        <a title="Морепродукты" href="#tab-1" class="addit-type3 js-tab-item active"></a>
+                                        <a title="Мясные" href="#tab-2" class="addit-type2 js-tab-item"></a>
+                                        <a title="Овощи" href="#tab-3" class="addit-type6 js-tab-item"></a>
+                                        <a title="Сыры" href="#tab-4" class="addit-type5 js-tab-item"></a>
+                                        <a title="Заправки" href="#tab-5" class="addit-type8 js-tab-item"></a>
+                        </div>
+                    
+                    <div class="list">
+                        <div class="seafood">
+                            <div class="squid">
+                                <img src="upload/seafood/squid.jpg" alt="">
+                                <div class="js-cnstr-itmname">Кальмары</div>
+                                <div class="js-cnstr-itmprice">
+                                    <span class="addit-item-weight data-squid-weight">
+                                        <span class="val">30</span> гр</span> 
+                                    <span class="addit-item-price data-squid-price">
+                                        <span class="val">13</span> грн
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shrimp">
+                                <img src="upload/seafood/shrimp.jpg" alt="">
+                                <div class="js-cnstr-itmname">Креветки</div>
+                                <div class="js-cnstr-itmprice">
+                                    <span class="addit-item-weight">
+                                        <span class="val">35</span> гр
+                                    </span> 
+                                    <span class="addit-item-price">
+                                        <span class="val">50</span> грн
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="mussels">
+                                <img src="upload/seafood/mussels.jpg" alt="">
+                                <div class="js-cnstr-itmname">Мидии</div>
+                                <div class="js-cnstr-itmprice">
+                                    <span class="addit-item-weight">
+                                        <span class="val">60</span> гр
+                                    </span> 
+                                    <span class="addit-item-price">
+                                        <span class="val">30</span> грн
+                                    </span>
+                                </div>
+                            </div>    
+                        </div>
                     </div>
+                    
+
                 </div>
             </div>
 
         <hr>
     </div>
     
+</div>
 </div>
 
 

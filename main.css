@@ -207,6 +207,10 @@ h2 {
     text-align: left
 }
 
+.consistance {
+    width: 300px;
+}
+
 .border {
     border: 1px solid #dedede;
 }
@@ -215,3 +219,97 @@ h2 {
 .additional-ingridient {
     padding-left: 35px;
 }
+
+
+.filling-list {
+    width: 480px;
+}
+
+
+.item-btns-wrap:after {
+ content: '';
+ width: 100%;
+ height: 1px;
+ display: inline-block;
+}
+
+.addit-type3 {
+    background: url('img/addit-types.png') no-repeat -100px 0;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 30px;
+    background-position: -100px -42px;
+}
+
+.addit-type2 { 
+    background: url(img/addit-types.png) no-repeat -50px 0;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 30px;
+ }
+
+ .addit-type6 {
+    background: url('img/addit-types.png') no-repeat -248px 0;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 30px;
+ }
+
+ .addit-type5 {
+    background: url(img/addit-types.png) no-repeat -198px 0;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 30px;
+ }
+
+ .addit-type8 {
+    background: url(img/addit-types.png) no-repeat -346px 0;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 30px;
+ }
+
+.seafood {
+    display: flex;
+    flex-direction: row;
+}
+
+ .seafood img {
+    max-width: 78px;
+    max-height: 52px;
+    margin: 0 auto;
+ }
+
+
+
+.js-cnstr-itmname {
+    font-size: 14px;
+}
+
+.addit-item-weight {
+    color: #939393;
+    font-size: 14px;
+}
+
+.addit-item-price {
+    color: #f37125;
+    font-size: 14px;
+}
+
+
+.squid, 
+.shrimp,
+.mussels {
+    text-align: center;
+    margin-right: 35px;
+} 

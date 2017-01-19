@@ -4,10 +4,6 @@
     <option name="myEncoding" value="windows-1251" />
     <option name="myConnectionType" value="NONE" />
   </component>
-  <component name="VagrantProjectSettings">
-    <option name="instanceFolder" value="" />
-    <option name="provider" value="" />
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">

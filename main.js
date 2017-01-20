@@ -16,6 +16,58 @@ $(document).ready(function () {
         return cssSize
     }
 
+    //стиль табов
+    function cssFootTab(type) {
+
+        var cssTab;
+
+        switch (type) {
+            case '#tab-1' :
+                cssTab = {'background-position': '-100px -42px'};
+                break;
+            case '#tab-2' :
+                cssTab = {'background-position': '-50px -42px'};
+                break;
+            case '#tab-3' :
+                cssTab = {'background-position': '-248px -42px'};
+                break;
+            case '#tab-4' :
+                cssTab = {'background-position': '-198px -42px'};
+                break;
+            case '#tab-5' :
+                cssTab = {'background-position': '-346px -42px'};
+                break;
+        }
+
+        return cssTab;
+    }
+
+    function listFootTab(type) {
+
+        var listTab;
+
+        switch (type) {
+            case '#tab-1' :
+                listTab = 'seafood';
+                break;
+            case '#tab-2' :
+                listTab = 'meat';
+                break;
+            case '#tab-3' :
+                listTab = 'vegetables';
+                break;
+            case '#tab-4' :
+                listTab = 'cheese';
+                break;
+            case '#tab-5' :
+                listTab = 'sauce-ingridient';
+                break;
+        }
+
+        return listTab;
+    }
+
+
     //запоминаем выбор для отоюражения (по умолчанию первый)
     var doughPizzaCss = 't1',
         sizePizza = 'sXXL',
@@ -76,17 +128,8 @@ $(document).ready(function () {
         //окрашиваем
         $('.size').css({'background-position': ''});
 
-        switch ($(this).attr('id')) {
-            case 'sX':
-                $(this).css(cssSize(sizePizza));
-                break;
-            case 'sXL':
-                $(this).css(cssSize(sizePizza));
-                break;
-            case 'sXXL':
-                $(this).css(cssSize(sizePizza));
-                break;
-        }
+        $(this).css(cssSize(sizePizza));
+
     });
 
     //ставим окраску выбора соуса
@@ -103,5 +146,52 @@ $(document).ready(function () {
 
     });
 
-});
 
+    //футер - отображение по табам
+    $('.js-tab-item').on('click', function () {
+
+        //обнуляем цвет
+        $('.js-tab-item').css({'background-position': ''});
+
+        //закрашиваем выбранный
+        var footerTab = $(this).attr('href');
+        $(this).css(cssFootTab(footerTab));
+
+        // отображаем вложенность по табам
+        $('.list').children().css({'display': 'none'});
+        $('.' + listFootTab(footerTab)).css({
+            'display': 'flex',
+            'flex-direction': 'row'
+        });
+
+    });
+
+
+    //перебросы в заказ
+    $('.size-img-ingridient').on('click', function () {
+        test = $(this)
+        var className = $(this).attr("class");
+        parName = $(this).parent();
+        $(this).parent().children().each(function (index) {
+            if ($(this).attr("class") == className) {
+                positionElem = index
+            }
+        });
+
+        $(this).appendTo('.filling')
+    })
+
+    //
+    $('.js-composition-item-dec').on('click', function () {
+        console.log('parName ', parName)
+        console.log('positionElem ', positionElem)
+        console.log('test ', test)
+        console.log($(parName).eq(positionElem))
+
+
+        $(test).appendTo($(parName).eq(positionElem))
+    })
+
+
+
+});

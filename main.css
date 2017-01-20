@@ -215,22 +215,20 @@ h2 {
     border: 1px solid #dedede;
 }
 
-.consistance, 
+.consistance,
 .additional-ingridient {
     padding-left: 35px;
 }
-
 
 .filling-list {
     width: 480px;
 }
 
-
 .item-btns-wrap:after {
- content: '';
- width: 100%;
- height: 1px;
- display: inline-block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: inline-block;
 }
 
 .addit-type3 {
@@ -240,44 +238,43 @@ h2 {
     display: inline-block;
     border-radius: 50%;
     margin-right: 30px;
-    background-position: -100px -42px;
 }
 
-.addit-type2 { 
+.addit-type2 {
     background: url(img/addit-types.png) no-repeat -50px 0;
     width: 38px;
     height: 38px;
     display: inline-block;
     border-radius: 50%;
     margin-right: 30px;
- }
+}
 
- .addit-type6 {
+.addit-type6 {
     background: url('img/addit-types.png') no-repeat -248px 0;
     width: 38px;
     height: 38px;
     display: inline-block;
     border-radius: 50%;
     margin-right: 30px;
- }
+}
 
- .addit-type5 {
+.addit-type5 {
     background: url(img/addit-types.png) no-repeat -198px 0;
     width: 38px;
     height: 38px;
     display: inline-block;
     border-radius: 50%;
     margin-right: 30px;
- }
+}
 
- .addit-type8 {
+.addit-type8 {
     background: url(img/addit-types.png) no-repeat -346px 0;
     width: 38px;
     height: 38px;
     display: inline-block;
     border-radius: 50%;
     margin-right: 30px;
- }
+}
 
 .seafood,
 .meat,
@@ -288,17 +285,15 @@ h2 {
     flex-direction: row;
 }
 
- .seafood img,
- .meat img,
- .vegetables img,
- .cheese img,
- .sauce-ingridient img {
+.seafood img,
+.meat img,
+.vegetables img,
+.cheese img,
+.sauce-ingridient img {
     max-width: 78px;
     max-height: 52px;
     margin: 0 auto;
- }
-
-
+}
 
 .js-cnstr-itmname {
     font-size: 14px;
@@ -314,13 +309,10 @@ h2 {
     font-size: 14px;
 }
 
-
-.squid, 
-.shrimp,
-.mussels {
+.size-img-ingridient {
     text-align: center;
     margin-right: 35px;
-} 
+}
 
 .meat,
 .vegetables,
@@ -340,22 +332,14 @@ h2 {
 }
 
 .composition-dec {
+
     width: 12px;
     height: 12px;
     border-radius: 50%;
     border: 1px solid #f32000;
+    /*display: none;*/
+    position: relative;
+    vertical-align: middle;
     cursor: pointer;
-    display: none;
-}
 
-.composition-dec:before {
-    content: '';
-    background: #f32000;
-    height: 2px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 4px;
-    right: 4px;
-    bottom: 0;
 }

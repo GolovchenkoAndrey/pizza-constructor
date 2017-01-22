@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92bde837-f187-4e55-acfd-67e77a913d2e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/066bb5b36e1e03281e342bb13513e29a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/13e1bc66309f579198a61c4e48e6cf90.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/1a71976c94a65dd0b3bb59aa6980ca6c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/2dc3dd02bbb65a1e7f37e5a3a72f8b10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/337af6064069822f564d4fa0822bfad3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/35ba6644fdb0db45c4cd99e80a678f1a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/3e7d9a805e3e97e95a87acde1fd28e64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/50fe8ec54aa482b699ab989a98e484d5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/51518bd2cc71cd590b23ade9aa994130.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/54ff4e59638d2d9c3f031d51b3b040a6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/5dbd5bef41b2ecaf43d4537b06481e44.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/5eae467115960e4cb6a840e09eabbb04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/69407041878080ed4fbb5921b2a78b5b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/6a4b5884671d7706ae2f491ef559d697.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/6a6d885bcd03cbd65c147762fc341e8f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/6d169aa97be875887a6a82ee113ce055.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/73478e1121e976b26e27976aba158927.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/7492f8bf161557c88183eb7fafe6859a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/91febea2a0d2606da1670cb5b8194c29.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/953773f3d81859dd9d102b2c1d765e8c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/97fffd6da2c7545bf30642b0c8eaeaa4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/a3d7461699a6bf9727902206abef9d26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/c0b89911aabc62be5ef1f0211e4cde5c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/c1d95f138cbd14ea913db3c7711b13f2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/ca1de8f94f2f36e6c7d638068139a47a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/cd7f75faa362dfd3436b97f26b03ceb3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/champignon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/d83951e1f448eb24da03d8682bed99aa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/d8755b968188016f7461691cd131b309.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/db9a3ef33e0d5046f17f33ccf0fded7e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/dea8dee9f0805f804da6669f2a64659c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/olive_tree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload/z-index/pepper_jalapeno.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/upload/z-index/olive_tree.png" afterPath="$PROJECT_DIR$/upload/z-index/olive_tree.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,11 +21,28 @@
     <option name="PATCH_PATH" value="C:\Users\WhiteN\WebstormProjects\pizza-constructor" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="pizza" />
+  </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.40327382">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <leaf>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="467">
+                  <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -68,33 +53,6 @@
                     <element signature="n#style#0;n#label#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="134">
-                  <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-                  <folding>
-                    <marker date="1485085463534" expanded="true" signature="7807:7817" ph="..." />
-                    <marker date="1485085463534" expanded="true" signature="7807:7818" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -216,49 +174,53 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pizza-constructor" />
+              <option name="myItemId" value="pizza" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
+              <option name="myItemId" value="upload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="z-index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +295,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -371,6 +333,7 @@
       <workItem from="1484772826699" duration="10262000" />
       <workItem from="1484810116246" duration="24702000" />
       <workItem from="1485077403728" duration="8026000" />
+      <workItem from="1485085654239" duration="1683000" />
     </task>
     <task id="LOCAL-00001" summary="create choose igridient">
       <created>1484511489066</created>
@@ -488,15 +451,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73630000" />
+    <option name="totallyTimeSpent" value="75313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27083334" sideWeight="0.4811784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27063197" sideWeight="0.4811784" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66939443" sideWeight="0.5119048" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66883117" sideWeight="0.48809522" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12872024" sideWeight="0.5188216" order="2" side_tool="true" content_ui="tabs" />
@@ -508,6 +470,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -695,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +726,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/z-index/olive_tree.png">
+    <entry file="file://$PROJECT_DIR$/upload/z-index/olive_tree.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -814,6 +776,43 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding>
+            <marker date="1485085646125" expanded="true" signature="51:8269" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="103:298" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1485085646125" expanded="true" signature="220:292" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="360:8265" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="590:1927" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="661:755" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2003:2210" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2099:2198" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2279:2960" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2339:2515" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2540:2718" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="2744:2923" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="3018:3769" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="3072:3731" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="3806:4413" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="3861:4374" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="4705:6169" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="4986:5578" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="5359:5471" ph="{&quot;display&quot;: 'inline-block'...}" />
+            <marker date="1485085646125" expanded="true" signature="5584:6159" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="6022:6143" ph="{&quot;display&quot;: 'inline-block'...}" />
+            <marker date="1485085646125" expanded="true" signature="6262:6569" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="6655:6970" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="7064:7553" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="7450:7540" ph="{&quot;display&quot;: 'flex'...}" />
+            <marker date="1485085646125" expanded="true" signature="7644:7919" ph="{...}" />
+            <marker date="1485085646125" expanded="true" signature="7807:7818" ph="..." />
+            <marker date="1485085646125" expanded="true" signature="8024:8257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -828,21 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="231" column="0" lean-forward="true" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding>
-            <marker date="1485085463534" expanded="true" signature="7807:7817" ph="..." />
-            <marker date="1485085463534" expanded="true" signature="7807:7818" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="467">
+          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding />
         </state>
       </provider>

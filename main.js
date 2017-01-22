@@ -30,7 +30,7 @@ $(document).ready(function () {
                 elemList.append('<div class=' + ajax_msg[i].type + '></div>');
             }
 
-            elemList.find('.' + ajax_msg[i].type).append('<span><div data-px=' + ajax_msg[i].p_x + ' data-wx=' + ajax_msg[i].w_x + ' data-pxl=' + ajax_msg[i].p_xl + ' data-wxl=' + ajax_msg[i].w_xl + ' data-pxxl=' + ajax_msg[i].p_xxl + ' data-wxxl' + ajax_msg[i].w_xxl + ' data-name=' + ajax_msg[i].id_name + ' id= ' + ajax_msg[i].type + ' class="' + ajax_msg[i].id_name + ' size-img-ingridient TEST_TEST_TEST" data-pos=' + ajax_msg[i].pos + '>' +
+            elemList.find('.' + ajax_msg[i].type).append('<span><div data-px=' + ajax_msg[i].p_x + ' data-wx=' + ajax_msg[i].w_x + ' data-pxl=' + ajax_msg[i].p_xl + ' data-wxl=' + ajax_msg[i].w_xl + ' data-pxxl=' + ajax_msg[i].p_xxl + ' data-wxxl=' + ajax_msg[i].w_xxl + ' data-name=' + ajax_msg[i].id_name + ' id= ' + ajax_msg[i].type + ' class="' + ajax_msg[i].id_name + ' size-img-ingridient TEST_TEST_TEST" data-pos=' + ajax_msg[i].pos + '>' +
                 '<img src="./upload/' + ajax_msg[i].id_name + '.jpg" class="js-cnstr-itmphoto" alt="">' +
                 '<div class="js-cnstr-itmname">' + ajax_msg[i].name + '</div>' +
                 '<div class="js-cnstr-itmprice">' +
@@ -46,28 +46,36 @@ $(document).ready(function () {
         }
 
 
+        //смена цены и грамов
+        function sizePrice(type, typeSize) {
+            $('.size-img-ingridient').find('.addit-item-' + type + '> .val').each(function () {
+                $(this).html($(this).closest($('.TEST_TEST_TEST')).attr(typeSize));
+            });
+        }
+
         //стиль для кжадого размера
         function cssSize(type) {
 
             var cssSize;
 
+
             if (type == 'sX') {
                 cssSize = {'background-position': '50% -47px'};
 
-                $('.size-img-ingridient').find('.addit-item-weight > .val').html()
-
-                //НУЖНО ВСЕ В ДАТУ
-                // var arrItem = $('.size-img-ingridient');
-                // var elemItem = arrItem.attr('data-name');
-                //
-                // $('.size-img-ingridient').each(function() {
-                //     console.log($(this).attr('data-name'))
-                // })
+                sizePrice('weight', 'data-wx');
+                sizePrice('price', 'data-px');
 
             } else if (type == 'sXL') {
                 cssSize = {'background-position': '50% -56px'};
+
+                sizePrice('weight', 'data-wxl');
+                sizePrice('price', 'data-pxl');
+
             } else if (type == 'sXXL') {
                 cssSize = {'background-position': '50% -66px'};
+
+                sizePrice('weight', 'data-wxxl');
+                sizePrice('price', 'data-pxxl');
             }
             return cssSize
         }

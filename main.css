@@ -37,6 +37,10 @@ body {
     background-size: cover;
 }
 
+.up-img img {
+    position: relative;
+}
+
 .pizza-characters {
     display: inline-block;
     width: 488px;

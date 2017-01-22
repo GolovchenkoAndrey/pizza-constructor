@@ -233,7 +233,12 @@ $(document).ready(function () {
 
         //перебросы в заказ
         $('.size-img-ingridient').on('click', function () {
-            $(this).appendTo('.filling')
+            var nameElem = $(this).attr('data-name');
+
+            $('.up-img').css({'z-index': ''});
+            $('.pizza').append('<img class="up-img" style="z-index: 1;" src=./upload/z-index/' + nameElem + '.jpg >');
+
+            $(this).appendTo('.filling');
         });
 
         //перекидываем обратно

@@ -287,7 +287,7 @@ $(document).ready(function () {
                 $(this).appendTo('.filling');
             });
 
-//перекидываем обратно
+            //перекидываем обратно
             $('.filling').on('click', '.size-img-ingridient', function () {
 
                 var elem = $(this),
@@ -303,5 +303,5 @@ $(document).ready(function () {
 
 
     }
-)
-;
+);
+

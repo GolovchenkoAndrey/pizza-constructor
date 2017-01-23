@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92bde837-f187-4e55-acfd-67e77a913d2e" name="Default" comment="new logic - create DB + ajax v/1/">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="92bde837-f187-4e55-acfd-67e77a913d2e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -317,7 +316,7 @@
       <workItem from="1484772826699" duration="10262000" />
       <workItem from="1484810116246" duration="24752000" />
       <workItem from="1485158994217" duration="562000" />
-      <workItem from="1485159627056" duration="142000" />
+      <workItem from="1485159627056" duration="152000" />
     </task>
     <task id="LOCAL-00001" summary="create choose igridient">
       <created>1484511489066</created>
@@ -431,11 +430,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484840041322</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="new logic - create DB + ajax v/1/">
+      <created>1485159783272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1485159783272</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66358000" />
+    <option name="totallyTimeSpent" value="66368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

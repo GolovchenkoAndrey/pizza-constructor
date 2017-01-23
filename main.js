@@ -75,7 +75,7 @@ $(document).ready(function () {
                 }
             }
 
-//стиль для кжадого размера
+            //стиль для кжадого размера
             function cssSize(type) {
 
                 var cssSize;
@@ -104,7 +104,7 @@ $(document).ready(function () {
                 return cssSize
             }
 
-//стиль табов
+            //стиль табов
             function cssFootTab(type) {
 
                 var cssTab;
@@ -156,12 +156,12 @@ $(document).ready(function () {
             }
 
 
-//запоминаем выбор для отоюражения (по умолчанию первый)
+            //запоминаем выбор для отоюражения (по умолчанию первый)
             var doughPizzaCss = 't1',
                 sizePizza = 'sXXL',
                 souchPizza = 'souch1';
 
-//оставляем только средний размер у ход-догов + выделяем нажатие
+            //оставляем только средний размер у ход-догов + выделяем нажатие
             $('.type-dough').on('click', function () {
 
                 doughPizzaCss = $(this).attr('id');
@@ -205,7 +205,7 @@ $(document).ready(function () {
                 }
             });
 
-//ставим окраску выбора размера пиццы
+            //ставим окраску выбора размера пиццы
             $('.size').on('click', function () {
 
                 sizePizza = $(this).attr('id');
@@ -220,7 +220,7 @@ $(document).ready(function () {
 
             });
 
-//ставим окраску выбора соуса
+            //ставим окраску выбора соуса
             $('.sauce').on('click', function () {
 
                 souchPizza = $(this).attr('id');
@@ -235,7 +235,7 @@ $(document).ready(function () {
             });
 
 
-//футер - отображение по табам
+            //футер - отображение по табам
             $('.js-tab-item').on('click', function () {
 
                 //обнуляем цвет
@@ -259,7 +259,7 @@ $(document).ready(function () {
                 resultWeight = 630;
 
 
-//перебросы в заказ
+            //перебросы в заказ
             $('.size-img-ingridient').on('click', function () {
                 var nameElem = $(this).attr('data-name');
 

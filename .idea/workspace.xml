@@ -52,7 +52,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="629">
@@ -60,6 +60,16 @@
                   <folding>
                     <marker date="1485159249500" expanded="true" signature="10048:10059" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -316,7 +326,7 @@
       <workItem from="1484772826699" duration="10262000" />
       <workItem from="1484810116246" duration="24752000" />
       <workItem from="1485158994217" duration="562000" />
-      <workItem from="1485159627056" duration="165000" />
+      <workItem from="1485159627056" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="create choose igridient">
       <created>1484511489066</created>
@@ -444,11 +454,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485159791630</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new logic - create DB + ajax v/1/">
+      <created>1485159808053</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1485159808053</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66381000" />
+    <option name="totallyTimeSpent" value="66393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -535,7 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload/sauce/curry.png" />
     <entry file="file://$PROJECT_DIR$/upload/sauce/acutaly-sweet.png" />
     <entry file="file://$PROJECT_DIR$/DB/1.html" />
     <entry file="file://$PROJECT_DIR$/img/americana.png">
@@ -791,6 +807,14 @@
           <folding>
             <marker date="1485159249500" expanded="true" signature="10048:10059" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

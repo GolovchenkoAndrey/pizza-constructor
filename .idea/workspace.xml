@@ -316,7 +316,7 @@
       <workItem from="1484772826699" duration="10262000" />
       <workItem from="1484810116246" duration="24752000" />
       <workItem from="1485158994217" duration="562000" />
-      <workItem from="1485159627056" duration="152000" />
+      <workItem from="1485159627056" duration="165000" />
     </task>
     <task id="LOCAL-00001" summary="create choose igridient">
       <created>1484511489066</created>
@@ -437,11 +437,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485159783272</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new logic - create DB + ajax v/1/">
+      <created>1485159791630</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1485159791630</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66368000" />
+    <option name="totallyTimeSpent" value="66381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

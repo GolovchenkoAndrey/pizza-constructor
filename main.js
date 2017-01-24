@@ -20,8 +20,11 @@ $(document).ready(function () {
             //обьект с сервака с ингридиентами
             var arrIngridient = ajax_msg;
 
-            //добавляем данные
+            //список ингридиентов
             var elemList = $('.list');
+
+            //список теста
+            var elemDough = $('.list');
 
             for (var i = 0; i < ajax_msg.length; i++) {
 
@@ -46,14 +49,8 @@ $(document).ready(function () {
                         '</div>' +
                         '</span>')
                 } else {
-                    $('.pizza-characters').find('.' + ajax_msg[i].id_name).attr({
-                        'data-px': ajax_msg[i].p_x,
-                        'data-wx': ajax_msg[i].w_x,
-                        'data-pxl': ajax_msg[i].p_xl,
-                        'data-wxl': ajax_msg[i].w_xl,
-                        'data-pxxl': ajax_msg[i].p_xxl,
-                        'data-wxxl': ajax_msg[i].w_xxl
-                    })
+
+                    $('.dough-choose').append('<label src=./img/' + ajax_msg[i].id_name + ' data-px' + ajax_msg[i].p_x + ' data-wx' + ajax_msg[i].w_x + ' data-pxl' + ajax_msg[i].p_xl + ' data-wxl' + ajax_msg[i].w_xl + ' data-pxxl' + ajax_msg[i].p_xxl + ' data-wxxl' + ajax_msg[i].w_xxl + ' data-value=' + ajax_msg[i].name + ' id=' + ajax_msg[i].id_name + ' class=' + ajax_msg[i].name + ' type-dough item-oplabel label- ' + ajax_msg[i].id_name + ' ></label>');
                 }
             }
 

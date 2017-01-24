@@ -152,7 +152,7 @@
     "w_xl":    "45",
     "p_xxl":   "30",
     "w_xxl":   "60",
-    "name":    "Палями Пепперони",
+    "name":    "Cалями Пепперони",
     "id_name": "salami_pepperoni"
   },
   {
@@ -490,5 +490,34 @@
     "w_xxl":   "50",
     "name":    "Карри",
     "id_name": "curry"
+  },
+  {
+    "type":    "dough",
+    "p_x":     "40",
+    "w_x":     "360",
+    "p_xl":    "53",
+    "w_xl":    "500",
+    "p_xxl":   "86",
+    "w_xxl":   "680",
+    "name":    "Американо",
+    "id_name": "americano"
+  },
+  {
+    "type":    "dough",
+    "p_x":     "25",
+    "w_x":     "250",
+    "name":    "Хот-Дог",
+    "id_name": "hot-dog"
+  },
+  {
+    "type":    "dough",
+    "p_x":     "40",
+    "w_x":     "400",
+    "p_xl":    "53",
+    "w_xl":    "590",
+    "p_xxl":   "86",
+    "w_xxl":   "830",
+    "name":    "Итальяно",
+    "id_name": "italiano"
   }
 ]

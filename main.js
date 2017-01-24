@@ -18,33 +18,44 @@ $(document).ready(function () {
         function startProc(ajax_msg) {
 
             //обьект с сервака с ингридиентами
-            var objIngridient = [];
-            objIngridient.push(ajax_msg);
+            var arrIngridient = ajax_msg;
 
             //добавляем данные
             var elemList = $('.list');
 
             for (var i = 0; i < ajax_msg.length; i++) {
 
-                if (elemList.find('.' + ajax_msg[i].type).length === 0) {
-                    elemList.append('<div class=' + ajax_msg[i].type + '></div>');
+                // добавляем только ингридиенты
+                if (ajax_msg[i].type != 'dough') {
+
+                    if (elemList.find('.' + ajax_msg[i].type).length === 0) {
+                        elemList.append('<div class=' + ajax_msg[i].type + '></div>');
+                    }
+
+                    elemList.find('.' + ajax_msg[i].type).append('<span><div data-px=' + ajax_msg[i].p_x + ' data-wx=' + ajax_msg[i].w_x + ' data-pxl=' + ajax_msg[i].p_xl + ' data-wxl=' + ajax_msg[i].w_xl + ' data-pxxl=' + ajax_msg[i].p_xxl + ' data-wxxl=' + ajax_msg[i].w_xxl + ' data-name=' + ajax_msg[i].id_name + ' id= ' + ajax_msg[i].type + ' class="' + ajax_msg[i].id_name + ' size-img-ingridient TEST_TEST_TEST" data-pos=' + ajax_msg[i].pos + '>' +
+                        '<img src="./upload/' + ajax_msg[i].id_name + '.jpg" class="js-cnstr-itmphoto" alt="">' +
+                        '<div class="js-cnstr-itmname">' + ajax_msg[i].name + '</div>' +
+                        '<div class="js-cnstr-itmprice">' +
+                        '<span class="addit-item-weight data-' + ajax_msg[i].id_name + '-weight">' +
+                        '<span class="val">' + ajax_msg[i].w_xxl + '</span> гр. ' +
+                        '</span>' +
+                        '<span class="addit-item-price data-' + ajax_msg[i].id_name + '-price">' +
+                        '<span class="val">' + ajax_msg[i].p_xxl + '</span> грн. ' +
+                        '</span>' +
+                        '</div>' +
+                        '</div>' +
+                        '</span>')
+                } else {
+                    $('.pizza-characters').find('.' + ajax_msg[i].id_name).attr({
+                        'data-px': ajax_msg[i].p_x,
+                        'data-wx': ajax_msg[i].w_x,
+                        'data-pxl': ajax_msg[i].p_xl,
+                        'data-wxl': ajax_msg[i].w_xl,
+                        'data-pxxl': ajax_msg[i].p_xxl,
+                        'data-wxxl': ajax_msg[i].w_xxl
+                    })
                 }
-
-                elemList.find('.' + ajax_msg[i].type).append('<span><div data-px=' + ajax_msg[i].p_x + ' data-wx=' + ajax_msg[i].w_x + ' data-pxl=' + ajax_msg[i].p_xl + ' data-wxl=' + ajax_msg[i].w_xl + ' data-pxxl=' + ajax_msg[i].p_xxl + ' data-wxxl=' + ajax_msg[i].w_xxl + ' data-name=' + ajax_msg[i].id_name + ' id= ' + ajax_msg[i].type + ' class="' + ajax_msg[i].id_name + ' size-img-ingridient TEST_TEST_TEST" data-pos=' + ajax_msg[i].pos + '>' +
-                    '<img src="./upload/' + ajax_msg[i].id_name + '.jpg" class="js-cnstr-itmphoto" alt="">' +
-                    '<div class="js-cnstr-itmname">' + ajax_msg[i].name + '</div>' +
-                    '<div class="js-cnstr-itmprice">' +
-                    '<span class="addit-item-weight data-' + ajax_msg[i].id_name + '-weight">' +
-                    '<span class="val">' + ajax_msg[i].w_xxl + '</span> гр. ' +
-                    '</span>' +
-                    '<span class="addit-item-price data-' + ajax_msg[i].id_name + '-price">' +
-                    '<span class="val">' + ajax_msg[i].p_xxl + '</span> грн. ' +
-                    '</span>' +
-                    '</div>' +
-                    '</div>' +
-                    '</span>')
             }
-
 
             //смена цены и грамов
             function sizePrice(type, typeSize) {
@@ -56,23 +67,38 @@ $(document).ready(function () {
             function resultSize(type) {
 
                 if (type == 'sX') {
+                    var price = 'p_x',
+                        weight = 'w_x';
 
-                    resultPrice = 30;
-                    resultWeight = 340;
-                    $('.item-price').html(resultPrice);
-                    $('.item-weight').html(resultWeight);
+                } else if (type == 'sXL') {
+                    var price = 'p_xl',
+                        weight = 'w_xl';
 
-                    if (result) {
-                        for (var i = 0; i < result.length; i++) {
+                } else if (type == 'sXXL') {
+                    var price = 'p_xxl',
+                        weight = 'w_xxl';
+                }
 
-                            resultPrice += +$('.' + result[i].id).attr('data-px');
-                            resultWeight += +$('.' + result[i].id).attr('data-wx');
+                //данные по умолчанию
+                var resultPrice = 0,
+                    resultWeight = 0;
+
+                //пересчитываем корзину
+                for (var i = 0; i < result.length; i++) {
+                    for (var k = 0; k < arrIngridient.length; k++) {
+                        if (result[i].id == arrIngridient[k].id_name) {
+                            result[i].price = arrIngridient[k][price];
+                            result[i].weight = arrIngridient[k][weight];
+                            resultPrice += +$('.' + result[i].id).attr('data-' + price.replace('_', ''));
+                            resultWeight += +$('.' + result[i].id).attr('data-' + weight.replace('_', ''));
                         }
                     }
-
-                    $('.item-price').html(resultPrice);
-                    $('.item-weight').html(resultWeight);
                 }
+
+
+                //отображаем итоговую сумму
+                $('.itemWeight-value').html(resultWeight);
+                $('.itemPrice-value').html(resultPrice);
             }
 
             //стиль для кжадого размера
@@ -95,11 +121,15 @@ $(document).ready(function () {
                     sizePrice('weight', 'data-wxl');
                     sizePrice('price', 'data-pxl');
 
+                    resultSize(type);
+
                 } else if (type == 'sXXL') {
                     cssSize = {'background-position': '50% -66px'};
 
                     sizePrice('weight', 'data-wxxl');
                     sizePrice('price', 'data-pxxl');
+
+                    resultSize(type);
                 }
                 return cssSize
             }
@@ -169,6 +199,14 @@ $(document).ready(function () {
                 //отображаем названия выбранного елемента
                 $('.js-label-dough').text($(this).attr('data-value'));
 
+                //достаем сумму и вес теста
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i].type == 'dough') {
+                        var resultPrice = result[i].price,
+                            resultWeight = result[i].weight;
+                    }
+                }
+
                 //1 - americano / 2 - italiano
                 if (doughPizzaCss == 't1' || doughPizzaCss == 't2') {
 
@@ -184,10 +222,15 @@ $(document).ready(function () {
                         'display': 'inline-block',
                         'background-position': ''
                     });
+
+                    // меняем цены и граммы по размерам
                     $('#' + sizePizza).css(cssSize(sizePizza));
 
                     //3 - hot-dog
                 } else {
+
+                    //изменяем цены и граммы у хот-дога
+                    $('#sXL').css(cssSize('sXL'));
 
                     //отображаем названия выбранного елемента
                     $('.js-label-cake').text($('#sXL').attr('data-value'));
@@ -254,9 +297,14 @@ $(document).ready(function () {
 
             });
 
-            var result = [],
-                resultPrice = 60,
-                resultWeight = 630;
+            //дефолтные значения корзины (добавляем только тесто)
+            var result = [{
+                type: 'dough',
+                id: 'americano',
+                size: 'sXXL',
+                price: '60',
+                weight: '630'
+            }];
 
 
             //перебросы в заказ
@@ -270,6 +318,15 @@ $(document).ready(function () {
                     weight: $(this).find('.addit-item-weight > .val').html()
                 };
 
+
+                //достаем сумму и вес теста
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i].type == 'dough') {
+                        var resultPrice = result[i].price,
+                            resultWeight = result[i].weight;
+                    }
+                }
+
                 //сумма грамм и суммы
                 resultPrice += +$(this).find('.addit-item-price > .val').html();
                 $('.itemPrice-value').html(resultPrice);
@@ -281,9 +338,9 @@ $(document).ready(function () {
                 result.push(objIngridientResult);
 
                 //накладываем картинки
-                $('.up-img').css({'z-index': ''});
-                $('.pizza').append('<img class="up-img" style="z-index: 1;" src=./upload/z-index/' + nameElem + '.jpg >');
+                $('.pizza').append('<img class="up-img" style="z-index: 1;" src=./upload/z-index/' + nameElem + '.png >');
 
+                // добавляем в заказ
                 $(this).appendTo('.filling');
             });
 

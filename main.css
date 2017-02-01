@@ -32,7 +32,7 @@ body {
 
 .pizza {
     position: relative;
-    z-index:0;
+    z-index: 0;
 }
 
 .pizza img {
@@ -114,8 +114,8 @@ h1 {
     display: none;
 }
 
-.label-hotdog {
-    background: url('img/hot-dog.png') no-repeat 0 0;
+.label-hot-dog > img {
+    background: no-repeat 0 0;
     width: 70px;
     height: 52px;
     display: inline-block;
@@ -124,8 +124,8 @@ h1 {
     opacity: .5;
 }
 
-.label-italano {
-    background: url('img/italiano.png') no-repeat 0 0;
+.label-italiano > img {
+    background: no-repeat 0 0;
     width: 70px;
     height: 52px;
     display: inline-block;
@@ -134,14 +134,14 @@ h1 {
     opacity: .5;
 }
 
-.label-americano {
-    background: url('img/americana.png') no-repeat 0 0;
+.label-americano > img {
+    background: no-repeat 0 0;
     width: 70px;
     height: 52px;
     display: inline-block;
     cursor: pointer;
     background-size: cover;
-    opacity: .5;
+    opacity: 1;
 }
 
 .item-params-side {

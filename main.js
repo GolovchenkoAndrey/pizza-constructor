@@ -23,9 +23,7 @@ $(document).ready(function () {
             //список ингридиентов
             var elemList = $('.list');
 
-            //список теста
-            var elemDough = $('.list');
-
+            //перебираем полученные данные с сервака
             for (var i = 0; i < ajax_msg.length; i++) {
 
                 // добавляем только ингридиенты
@@ -49,8 +47,8 @@ $(document).ready(function () {
                         '</div>' +
                         '</span>')
                 } else {
-
-                    $('.dough-choose').append('<label src=./img/' + ajax_msg[i].id_name + ' data-px' + ajax_msg[i].p_x + ' data-wx' + ajax_msg[i].w_x + ' data-pxl' + ajax_msg[i].p_xl + ' data-wxl' + ajax_msg[i].w_xl + ' data-pxxl' + ajax_msg[i].p_xxl + ' data-wxxl' + ajax_msg[i].w_xxl + ' data-value=' + ajax_msg[i].name + ' id=' + ajax_msg[i].id_name + ' class=' + ajax_msg[i].name + ' type-dough item-oplabel label- ' + ajax_msg[i].id_name + ' ></label>');
+                    //добавляем тесто
+                    $('.dough-choose').append('<label data-px=' + ajax_msg[i].p_x + ' data-wx=' + ajax_msg[i].w_x + ' data-pxl=' + ajax_msg[i].p_xl + ' data-wxl=' + ajax_msg[i].w_xl + ' data-pxxl=' + ajax_msg[i].p_xxl + ' data-wxxl=' + ajax_msg[i].w_xxl + ' data-value=' + ajax_msg[i].name + ' id=' + ajax_msg[i].id_name + ' class="' + ajax_msg[i].id_name + ' type-dough item-oplabel label-' + ajax_msg[i].id_name + '"><img src="./img/' + ajax_msg[i].id_name + '.png"></label>');
                 }
             }
 
@@ -63,15 +61,15 @@ $(document).ready(function () {
 
             function resultSize(type) {
 
-                if (type == 'sX') {
+                if (type == 'x') {
                     var price = 'p_x',
                         weight = 'w_x';
 
-                } else if (type == 'sXL') {
+                } else if (type == 'xl') {
                     var price = 'p_xl',
                         weight = 'w_xl';
 
-                } else if (type == 'sXXL') {
+                } else if (type == 'xxl') {
                     var price = 'p_xxl',
                         weight = 'w_xxl';
                 }
@@ -104,7 +102,7 @@ $(document).ready(function () {
                 var cssSize;
 
 
-                if (type == 'sX') {
+                if (type == 'x') {
                     cssSize = {'background-position': '50% -47px'};
 
                     sizePrice('weight', 'data-wx');
@@ -112,7 +110,7 @@ $(document).ready(function () {
 
                     resultSize(type);
 
-                } else if (type == 'sXL') {
+                } else if (type == 'xl') {
                     cssSize = {'background-position': '50% -56px'};
 
                     sizePrice('weight', 'data-wxl');
@@ -120,7 +118,7 @@ $(document).ready(function () {
 
                     resultSize(type);
 
-                } else if (type == 'sXXL') {
+                } else if (type == 'xxl') {
                     cssSize = {'background-position': '50% -66px'};
 
                     sizePrice('weight', 'data-wxxl');
@@ -185,13 +183,16 @@ $(document).ready(function () {
 
             //запоминаем выбор для отоюражения (по умолчанию первый)
             var doughPizzaCss = 't1',
-                sizePizza = 'sXXL',
+                sizePizza = 'xxl',
                 souchPizza = 'souch1';
 
             //оставляем только средний размер у ход-догов + выделяем нажатие
             $('.type-dough').on('click', function () {
 
                 doughPizzaCss = $(this).attr('id');
+
+                //меняем в корзине тесто
+                changeCart('dough', doughPizzaCss);
 
                 //отображаем названия выбранного елемента
                 $('.js-label-dough').text($(this).attr('data-value'));
@@ -205,14 +206,14 @@ $(document).ready(function () {
                 }
 
                 //1 - americano / 2 - italiano
-                if (doughPizzaCss == 't1' || doughPizzaCss == 't2') {
+                if (doughPizzaCss == 'italiano' || doughPizzaCss == 'americano') {
 
                     //отображаем названия выбранного елемента
                     $('.js-label-cake').text($('#' + sizePizza).attr('data-value'));
 
                     //окрашиваем вбыранный елемент
-                    $('.type-dough').css({'opacity': '.5'});
-                    $(this).css({'opacity': '1'});
+                    $('.type-dough > img').css({'opacity': '.5'});
+                    $(this).find('img').css({'opacity': '1'});
 
                     //возвращаем размеры и окраску
                     $('.size').css({
@@ -226,15 +227,21 @@ $(document).ready(function () {
                     //3 - hot-dog
                 } else {
 
+                    //ставим средний размер
+                    sizePizza = 'xl';
+
+                    //пересчитываем корзину
+                    countCart();
+
                     //изменяем цены и граммы у хот-дога
-                    $('#sXL').css(cssSize('sXL'));
+                    $('#xl').css(cssSize('xl'));
 
                     //отображаем названия выбранного елемента
-                    $('.js-label-cake').text($('#sXL').attr('data-value'));
+                    $('.js-label-cake').text($('#xl').attr('data-value'));
 
                     //окрашиваем вбыранный елемент
-                    $('.type-dough').css({'opacity': '.5'});
-                    $(this).css({'opacity': '1'});
+                    $('.type-dough > img').css({'opacity': '.5'});
+                    $(this).find('img').css({'opacity': '1'});
 
                     //оставляем только средний размер + красим его
                     $('.size').css({'display': 'none'});
@@ -249,6 +256,9 @@ $(document).ready(function () {
             $('.size').on('click', function () {
 
                 sizePizza = $(this).attr('id');
+
+                //пересчитываем корзину
+                countCart();
 
                 //отображаем названия выбранного елемента
                 $('.js-label-cake').text($(this).attr('data-value'));
@@ -296,13 +306,42 @@ $(document).ready(function () {
 
             //дефолтные значения корзины (добавляем только тесто)
             var result = [{
-                type: 'dough',
+                type: 'douth',
                 id: 'americano',
-                size: 'sXXL',
-                price: '60',
-                weight: '630'
+                price: '86',
+                weight: '680'
             }];
 
+
+            function changeCart(type, id) {
+                for (var i = 0; i < result.length; i++) {
+                    if (result[i].type == type) {
+                        result[i].price = $('#' + id).data('p' + sizePizza);
+                        result[i].weight = $('#' + id).data('w' + sizePizza);
+                        result[i].id = id;
+                    }
+                }
+            }
+
+            function countCart(type) {
+                var resultPrice = 0,
+                    resultWeight = 0;
+
+                for (var i = 0; i < result.length; i++) {
+                    resultPrice += +$(this).find('.addit-item-price > .val').html();
+                    resultWeight += +$(this).find('.addit-item-weight > .val').html();
+
+                    if (result[i].type == type) {
+                        result[i].price = $('#' + result[i].id).data('p' + sizePizza);
+                        result[i].weight = $('#' + result[i].id).data('w' + sizePizza);
+                    }
+                }
+
+                //отображаем подсчет корзины
+                $('.itemPrice-value').html(resultPrice);
+                $('.itemWeight-value').html(resultWeight);
+
+            }
 
             //перебросы в заказ
             $('.size-img-ingridient').on('click', function () {
@@ -324,12 +363,12 @@ $(document).ready(function () {
                     }
                 }
 
-                //сумма грамм и суммы
-                resultPrice += +$(this).find('.addit-item-price > .val').html();
-                $('.itemPrice-value').html(resultPrice);
-
-                resultWeight += +$(this).find('.addit-item-weight > .val').html();
-                $('.itemWeight-value').html(resultWeight);
+                // //сумма грамм и суммы
+                // resultPrice += +$(this).find('.addit-item-price > .val').html();
+                // $('.itemPrice-value').html(resultPrice);
+                //
+                // resultWeight += +$(this).find('.addit-item-weight > .val').html();
+                // $('.itemWeight-value').html(resultWeight);
 
                 //добавляем в массив
                 result.push(objIngridientResult);
@@ -357,5 +396,6 @@ $(document).ready(function () {
 
 
     }
-);
+)
+;
 

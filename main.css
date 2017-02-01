@@ -30,11 +30,26 @@ body {
     justify-content: space-between;
 }
 
+.pizza {
+    position: relative;
+    z-index:0;
+}
+
 .pizza img {
     margin: 10px;
-    width: 440px;
-    height: 440px;
+    max-width: 440px;
+    max-height: 440px;
     background-size: cover;
+}
+
+.up-img {
+    position: absolute;
+    top: 53px;
+    left: 56px;
+}
+
+.up-img img {
+    position: relative;
 }
 
 .pizza-characters {

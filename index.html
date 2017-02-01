@@ -12,7 +12,7 @@
     <div class="container">
         <div class="desk">
             <div class="pizza">
-                <img src="https://pizza.od.ua/local/templates/pizzaodua/img/Custom_Pizza_3.jpg" alt="">
+                <img src="./img/Custom_Pizza_3.jpg" alt="">
             </div>
             <div class="pizza-characters">
                 <h1>Сделай пиццу сам!</h1>
@@ -22,12 +22,14 @@
                         <div class="item-params-value js-label-dough">Американо</div>
                     </div>
                     <div class="box-base clearfix">
-                        <div class="item-btns-wrap item-btns-dough">
-                            <label data-value="Американо" id="t1" class="type-dough item-oplabel label-americano"
-                                   style="opacity: 1;"></label>
-                            <label data-value="Итальяно" id="t2" class="type-dough item-oplabel label-italano"></label>
-                            <label data-value="Хот-Дог" id="t3"
-                                   class="type-dough item-oplabel label-hotdog js-hotdog-toggle"></label>
+                        <div class="dough-choose item-btns-wrap item-btns-dough">
+                            <!--<label data-value="Американо" id="t1"-->
+                                   <!--class="americano type-dough item-oplabel label-americano"-->
+                                   <!--style="opacity: 1;"></label>-->
+                            <!--<label data-value="Итальяно" id="t2"-->
+                                   <!--class="italiano type-dough item-oplabel label-italano"></label>-->
+                            <!--<label data-value="Хот-Дог" id="t3"-->
+                                   <!--class="hot-dog type-dough item-oplabel label-hotdog js-hotdog-toggle"></label>-->
                         </div>
                     </div>
 
@@ -94,14 +96,19 @@
 
         <hr>
 
-        <div class="box-base ta_r clearfix">
-            <div class="item-order">
-                 <span class="item-price">
-                    <span class="itemPrice-value">40</span> грн
-                </span> /
-                <span class="item-weight">
-                    <span class="itemWeight-value">470</span> гр
-                </span>
+        <div class="item-bottom">
+            <div class="box clearfix">
+                <div class="box-side item-bottom-side">
+                    <a data-saved="В избранном" href="#" class="item-link bkm js-favorite">Сохранить пиццу</a>
+                    <a href="#" class="item-link pizza-reset js-pizza-reset">Сбросить</a>
+                </div>
+                <div class="box-base ta_r clearfix">
+                    <div class="item-order">
+                        <span class="item-price"><span class="itemPrice-value">60</span> грн</span> / <span
+                            class="item-weight"><span class="itemWeight-value">630</span> гр</span>
+                    </div>
+                    <button class="item-tocart">В корзину</button>
+                </div>
             </div>
         </div>
     </div>
@@ -115,11 +122,3 @@
 <script src="main.js"></script>
 </body>
 </html>
-
-
-<span><div id="seafood" class="squid size-img-ingridient TEST_TEST_TEST" data-pos="0"><img src="./upload/squid.jpg"
-                                                                                           class="js-cnstr-itmphoto"
-                                                                                           alt=""><div
-        class="js-cnstr-itmname">Кальмары</div><div class="js-cnstr-itmprice"><span
-        class="addit-item-weight data-squid-weight"><span class="val">50</span> гр. </span><span
-        class="addit-item-price data-squid-price"><span class="val">26</span> грн. </span></div></div></span>
